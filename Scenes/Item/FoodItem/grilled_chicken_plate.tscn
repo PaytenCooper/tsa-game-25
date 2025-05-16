@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://di6uj13lhpqbk"]
+
+[ext_resource type="PackedScene" uid="uid://dg67nqellhdvi" path="res://Scenes/Item/food_item.tscn" id="1_32qae"]
+[ext_resource type="Texture2D" uid="uid://c2sl3fdkx24xq" path="res://Art/Food/Plate.png" id="2_pj6b8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ifew"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pj6b8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pj6b8"]
+
+[node name="GrilledChickenPlate" instance=ExtResource("1_32qae")]
+GrabRemainder = null
+GrabPiece = null
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_7ifew")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D" index="0"]
+position = Vector2(1.61258, -4.00628)
+sprite_frames = SubResource("SpriteFrames_pj6b8")

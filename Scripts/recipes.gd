@@ -23,10 +23,10 @@ const recipes = {
 	[ "Chips", "Salsa" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/chips_and_salsa.tscn") ],
 	[ "Tortilla", "CookedChicken", "GratedCheese", "Salsa" ]:		[ actions.MIX, preload("res://Scenes/Item/FoodItem/burrito.tscn") ],
 	
-	#[ "FriedRice", "SaucyGirlledChicken" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/grilled_chicken_plate.tscn") ],
-	#[ "FriedRice", "SaucyGrilledSteak" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/grilled_steak_plate.tscn") ],
-	#[ "FriedRice", "SaucyGrilledShrimp" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/grilled_shrimp_plate.tscn") ],
-	#
+	[ "FriedRice", "SaucyGrilledChicken" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/grilled_chicken_plate.tscn") ],
+	[ "FriedRice", "SaucyGrilledSteak" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/grilled_steak_plate.tscn") ],
+	[ "FriedRice", "SaucyGrilledShrimp" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/grilled_shrimp_plate.tscn") ],
+	
 	#[ "Spaghetti", "RedSauce" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/red_sauce_spaghetti.tscn") ],
 	#[ "Spaghetti", "Alfredo" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/alfredo_spaghetti.tscn") ],
 	#[ "Spaghetti", "Pesto" ]:		[ actions.AUTO, preload("res://Scenes/Item/FoodItem/pesto_spaghetti.tscn") ],

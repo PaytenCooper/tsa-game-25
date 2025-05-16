@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dc1x43pd0gleg"]
+
+[ext_resource type="PackedScene" uid="uid://dg67nqellhdvi" path="res://Scenes/Item/food_item.tscn" id="1_ua36j"]
+[ext_resource type="Texture2D" uid="uid://c2sl3fdkx24xq" path="res://Art/Food/Plate.png" id="2_uskub"]
+[ext_resource type="Texture2D" uid="uid://cvj11cuf2ukyo" path="res://Art/Food/Juicy shrimp.png" id="3_6slhs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oah5n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_uskub")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b8h3p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_6slhs")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="GrilledShrimpPlate" instance=ExtResource("1_ua36j")]
+GrabRemainder = null
+GrabPiece = null
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_oah5n")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D" index="0"]
+position = Vector2(-4, -4)
+scale = Vector2(0.558607, 0.551598)
+sprite_frames = SubResource("SpriteFrames_b8h3p")
